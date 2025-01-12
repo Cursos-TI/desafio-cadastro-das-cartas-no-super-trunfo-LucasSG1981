@@ -4,19 +4,700 @@
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
 // Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+//Teste Lucas
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
+    //Declarando as variáveis com nome dos estados.
+    char A[20]="null", B[20]="null", C[20]="null", D[20]="null", E[20]="null", F[20]="null", G[20]="null", H[20]="null";
+
+    //Declarando as variáveis com as cidades.
+    char A01[20]="null", A02[20]="null", A03[20]="null", A04[20]="null",B01[20]="null", B02[20]="null", B03[20]="null", B04[20]="null",C01[20]="null", C02[20]="null", C03[20]="null", C04[20]="null", D01[20]="null", D02[20]="null", D03[20]="null", D04[20]="null", E01[20]="null", E02[20]="null", E03[20]="null", E04[20]="null", F01[20]="null", F02[20]="null", F03[20]="null", F04[20]="null", G01[20]="null", G02[20]="null", G03[20]="null", G04[20]="null", H01[20]="null", H02[20]="null", H03[20]="null", H04[20]="null";
+
+    //Declarando Variável População.
+    int pa01, pa02, pa03, pa04, pb01, pb02, pb03, pb04, pc01, pc02, pc03, pc04, pd01, pd02, pd03, pd04, pe01, pe02, pe03, pe04,pf01, pf02, pf03, pf04, pg01, pg02, pg03, pg04, ph01, ph02, ph03, ph04;
+
+    //Declarando Variável Área.
+    int aa01, aa02, aa03, aa04, ab01, ab02, ab03, ab04, ac01, ac02, ac03, ac04, ad01, ad02, ad03, ad04, ae01, ae02, ae03, ae04,af01, af02, af03, af04, ag01, ag02, ag03, ag04, ah01, ah02, ah03, ah04;
+
+    //Declarando Variável PIB.
+    int ba01, ba02, ba03, ba04, bb01, bb02, bb03, bb04, bc01, bc02, bc03, bc04, bd01, bd02, bd03, bd04, be01, be02, be03, be04,bf01, bf02, bf03, bf04, bg01, bg02, bg03, bg04, bh01, bh02, bh03, bh04;
+
+    //Declarando Variável N° de Pontos Turísticos.
+    int ta01, ta02, ta03, ta04, tb01, tb02, tb03, tb04, tc01, tc02, tc03, tc04, td01, td02, td03, td04, te01, te02, te03, te04,tf01, tf02, tf03, tf04, tg01, tg02, tg03, tg04, th01, th02, th03, th04;
+
+    //Solicitando a inserção dos Estados pelo usuário.
+    printf("Digite o nome do primeiro Estado: ");
+    scanf(" %19s", A);
+    printf("\n");
+    printf("Digite o nome do segundo Estado: ");
+    scanf(" %19s", B);
+    printf("\n");
+    printf("Digite o nome do terceiro Estado: ");
+    scanf(" %19s", C);
+    printf("\n");
+    printf("Digite o nome do quarto Estado: ");
+    scanf(" %19s", D);
+    printf("\n");
+    printf("Digite o nome do quinto Estado: ");
+    scanf(" %19s", E);
+    printf("\n");
+    printf("Digite o nome do sexto Estado: ");
+    scanf(" %19s", F);
+    printf("\n");
+    printf("Digite o nome do sétimo Estado: ");
+    scanf(" %19s", G);
+    printf("\n");
+    printf("Digite o nome do último Estado: ");
+    scanf(" %19s", H);
+    printf("\n");
+//Solicitando ao usuário inserir oo nome das quatro cidades de cada estado.
+    printf("Insria agora o nome das 4 cidades selecionadas do estado %s. \n", A);
+    printf("01-");
+    scanf("%19s", A01);
+    printf("\n");
+    printf("02-");
+    scanf("%19s", A02);
+    printf("\n");
+    printf("03-");
+    scanf(" %19s", A03);
+    printf("\n");
+    printf("04-");
+    scanf(" %19s", A04);
+    printf("\n");
+    printf("Insria agora o nome das 4 cidades selecionadas do estado %s.\n", B);
+    printf("01-");
+    scanf("%19s", B01);
+    printf("\n");
+    printf("02-");
+    scanf(" %19s", B02);
+    printf("\n");
+    printf("03-");
+    scanf(" %19s", B03);
+    printf("\n");
+    printf("04-");
+    scanf(" %19s", B04);
+    printf("\n");
+    printf("Insria agora o nome das 4 cidades selecionadas do estado %s. \n", C);
+    printf("01-");
+    scanf("%19s", C01);
+    printf("\n");
+    printf("02-");
+    scanf(" %19s", C02);
+    printf("\n");
+    printf("03-");
+    scanf(" %19s", C03);
+    printf("\n");
+    printf("04-");
+    scanf(" %19s", C04);
+    printf("\n");
+    printf("Insria agora o nome das 4 cidades selecionadas do estado %s. \n", D);
+    printf("01-");
+    scanf("%19s", D01);
+    printf("\n");
+    printf("02-");
+    scanf(" %19s", D02);
+    printf("\n");
+    printf("03-");
+    scanf(" %19s", D03);
+    printf("\n");
+    printf("04-");
+    scanf(" %19s", D04);
+    printf("\n");
+    printf("Insria agora o nome das 4 cidades selecionadas do estado %s. \n", E);
+    printf("01-");
+    scanf("%19s", E01);
+    printf("\n");
+    printf("02-");
+    scanf(" %19s", E02);
+    printf("\n");
+    printf("03-");
+    scanf(" %19s", E03);
+    printf("\n");
+    printf("04-");
+    scanf(" %19s", E04);
+    printf("\n");
+    printf("Insria agora o nome das 4 cidades selecionadas do estado %s. \n", F);
+    printf("01-");
+    scanf("%19s", F01);
+    printf("\n");
+    printf("02-");
+    scanf(" %19s", F02);
+    printf("\n");
+    printf("03-");
+    scanf(" %19s", F03);
+    printf("\n");
+    printf("04-");
+    scanf(" %19s", F04);
+    printf("\n");
+    printf("Insria agora o nome das 4 cidades selecionadas do estado %s. \n", G);
+    printf("01-");
+    scanf("%19s", G01);
+    printf("\n");
+    printf("02-");
+    scanf(" %19s", G02);
+    printf("\n");
+    printf("03-");
+    scanf(" %19s", G03);
+    printf("\n");
+    printf("04-");
+    scanf(" %19s", G04);
+    printf("\n");
+    printf("Insria agora o nome das 4 cidades selecionadas do estado %s. \n", H);
+    printf("01-");
+    scanf("%19s", H01);
+    printf("\n");
+    printf("02-");
+    scanf(" %19s", H02);
+    printf("\n");
+    printf("03-");
+    scanf(" %19s", H03);
+    printf("\n");
+    printf("04-");
+    scanf(" %19s", H04);
+    printf("\n");
+//Informando os dados das váriaveis de cada cidade.
+    printf("Agora será necessário informar os dados de cada cidade.\n");
+
+    printf("%s",A01);
+    printf("\n");
+    printf("População: ");
+    scanf("%d", &pa01);
+    printf("\n");
+    printf("Área: ");
+    scanf("%f", &aa01);
+    printf("\n");
+    printf("PIB: ");
+    scanf("%f", &ba01);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf("%i", &ta01);
+    printf("\n");
+
+    printf("%s",A02);
+    printf("\n");
+    printf("População: ");
+    scanf("%i",&pa02);
+    printf("\n");
+    printf("Área: ");
+    scanf("%f", &aa02);
+    printf("\n");
+    printf("PIB: ");
+    scanf("%f", &ba02);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf("%i", &ta02);
+    printf("\n");
+
+    printf("%s",A03);
+    printf("\n");
+    printf("População: ");
+    scanf("%i",&pa03);
+    printf("\n");
+    printf("Área: ");
+    scanf("%f", &aa03);
+    printf("\n");
+    printf("PIB: ");
+    scanf("%f", &ba03);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf("%i", &ta03);
+    printf("\n");
+
+    printf("%s",A04);
+    printf("\n");
+    printf("População: ");
+    scanf("%i",&pa04);
+    printf("\n");
+    printf("Área: ");
+    scanf("%f", &aa04);
+    printf("\n");
+    printf("PIB: ");
+    scanf("%f", &ba04);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf("%i", &ta04);
+    printf("\n");
+
+    printf("%s",B01);
+    printf("\n");
+    printf("População: ");
+    scanf("%i",&pb01);
+    printf("\n");
+    printf("Área: ");
+    scanf("%f", &ab01);
+    printf("\n");
+    printf("PIB: ");
+    scanf("%f", &bb01);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf("%i", &tb01);
+    printf("\n");
+
+    printf("%s",B02);
+    printf("\n");
+    printf("População: ");
+    scanf("%i",&pb02);
+    printf("\n");
+    printf("Área: ");
+    scanf("%f", &ab02);
+    printf("\n");
+    printf("PIB: ");
+    scanf("%f", &bb02);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf("%i", &tb02);
+    printf("\n");
+
+    printf("%s",B03);
+    printf("\n");
+    printf("População: ");
+    scanf("%i",&pb03);
+    printf("\n");
+    printf("Área: ");
+    scanf("%f", &ab03);
+    printf("\n");
+    printf("PIB: ");
+    scanf("%f", &bb03);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf("%i", &tb03);
+    printf("\n");
+
+    printf("%s",B04);
+    printf("\n");
+    printf("População: ");
+    scanf("%i", &pb04);
+    printf("\n");
+    printf("Área: ");
+    scanf("%f", &ab04);
+    printf("\n");
+    printf("PIB: ");
+    scanf("%f", &bb04);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf("%i", &tb04);
+    printf("\n");
+
+    printf("%s",C01);
+    printf("\n");
+    printf("População: ");
+    scanf("%i", &pc01);
+    printf("\n");
+    printf("Área: ");
+    scanf("%f", &ac01);
+    printf("\n");
+    printf("PIB: ");
+    scanf("%f", &bc01);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf("%i", &tc01);
+    printf("\n");
+
+    printf("%s",C02);
+    printf("\n");
+    printf("População: ");
+    scanf("%i", &pc02);
+    printf("\n");
+    printf("Área: ");
+    scanf("%f", &ac02);
+    printf("\n");
+    printf("PIB: ");
+    scanf("%f", &bc02);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf("%i", &tc02);
+    printf("\n");
+
+    printf("%s",C03);
+    printf("\n");
+    printf("População: ");
+    scanf("%i", &pc03);
+    printf("\n");
+    printf("Área: ");
+    scanf("%f", &ac03);
+    printf("\n");
+    printf("PIB: ");
+    scanf("%f", &bc03);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf("%i", &tc03);
+    printf("\n");
+
+    printf(" %s",C04);
+    printf("\n");
+    printf("População: ");
+    scanf(" %i", &pc04);
+    printf("\n");
+    printf("Área: ");
+    scanf(" %f", &ac04);
+    printf("\n");
+    printf("PIB: ");
+    scanf(" %f", &bc04);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf(" %i", &tc04);
+    printf("\n");
+
+    printf(" %s",D01);
+    printf("\n");
+    printf("População: ");
+    scanf(" %i",pd01);
+    printf("\n");
+    printf("Área: ");
+    scanf(" %f", ad01);
+    printf("\n");
+    printf("PIB: ");
+    scanf(" %f", bd01);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf(" %i", td01);
+    printf("\n");
+
+    printf(" %s",D02);
+    printf("\n");
+    printf("População: ");
+    scanf(" %i",pd02);
+    printf("\n");
+    printf("Área: ");
+    scanf(" %f", ad02);
+    printf("\n");
+    printf("PIB: ");
+    scanf(" %f", bd02);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf(" %i", td02);
+    printf("\n");
+
+    printf(" %s",D03);
+    printf("\n");
+    printf("População: ");
+    scanf(" %i",pd03);
+    printf("\n");
+    printf("Área: ");
+    scanf(" %f", ad03);
+    printf("\n");
+    printf("PIB: ");
+    scanf(" %f", bd03);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf(" %i", td03);
+    printf("\n");
+
+    printf(" %s",D04);
+    printf("\n");
+    printf("População: ");
+    scanf(" %i",pd04);
+    printf("\n");
+    printf("Área: ");
+    scanf(" %f", ad04);
+    printf("\n");
+    printf("PIB: ");
+    scanf(" %f", bd04);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf(" %i", td04);
+    printf("\n");
+
+    printf(" %s",E01);
+    printf("\n");
+    printf("População: ");
+    scanf(" %i",pe01);
+    printf("\n");
+    printf("Área: ");
+    scanf(" %f", ae01);
+    printf("\n");
+    printf("PIB: ");
+    scanf(" %f", be01);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf(" %i", te01);
+    printf("\n");
+
+    printf(" %s",E02);
+    printf("\n");
+    printf("População: ");
+    scanf(" %i",pe02);
+    printf("\n");
+    printf("Área: ");
+    scanf(" %f", ae02);
+    printf("\n");
+    printf("PIB: ");
+    scanf(" %f", be02);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf(" %i", te02);
+    printf("\n");
+
+    printf(" %s",E03);
+    printf("\n");
+    printf("População: ");
+    scanf(" %i",pe03);
+    printf("\n");
+    printf("Área: ");
+    scanf(" %f", ae03);
+    printf("\n");
+    printf("PIB: ");
+    scanf(" %f", be03);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf(" %i", te03);
+    printf("\n");
+
+    printf(" %s",E04);
+    printf("\n");
+    printf("População: ");
+    scanf(" %i",pe04);
+    printf("\n");
+    printf("Área: ");
+    scanf(" %f", ae04);
+    printf("\n");
+    printf("PIB: ");
+    scanf(" %f", be04);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf(" %i", te04);
+    printf("\n");
+
+    printf(" %s",F01);
+    printf("\n");
+    printf("População: ");
+    scanf(" %i",pf01);
+    printf("\n");
+    printf("Área: ");
+    scanf(" %f", af01);
+    printf("\n");
+    printf("PIB: ");
+    scanf(" %f", bf01);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf(" %i", tf01);
+    printf("\n");
+
+    printf(" %s",F02);
+    printf("\n");
+    printf("População: ");
+    scanf(" %i",pf02);
+    printf("\n");
+    printf("Área: ");
+    scanf(" %f", af02);
+    printf("\n");
+    printf("PIB: ");
+    scanf(" %f", bf02);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf(" %i", tf02);
+    printf("\n");
+
+    printf(" %s",F03);
+    printf("\n");
+    printf("População: ");
+    scanf(" %i",pf03);
+    printf("\n");
+    printf("Área: ");
+    scanf(" %f", af03);
+    printf("\n");
+    printf("PIB: ");
+    scanf(" %f", bf03);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf(" %i", tf03);
+    printf("\n");
+
+    printf(" %s",F04);
+    printf("\n");
+    printf("População: ");
+    scanf(" %i",pf04);
+    printf("\n");
+    printf("Área: ");
+    scanf(" %f", af04);
+    printf("\n");
+    printf("PIB: ");
+    scanf(" %f", bf04);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf(" %i", tf04);
+    printf("\n");
+
+    printf(" %s",G01);
+    printf("\n");
+    printf("População: ");
+    scanf(" %i",pg01);
+    printf("\n");
+    printf("Área: ");
+    scanf(" %f", ag01);
+    printf("\n");
+    printf("PIB: ");
+    scanf(" %f", bg01);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf(" %i", tg01);
+    printf("\n");
+
+    printf(" %s",G02);
+    printf("\n");
+    printf("População: ");
+    scanf(" %i",pg02);
+    printf("\n");
+    printf("Área: ");
+    scanf(" %f", ag02);
+    printf("\n");
+    printf("PIB: ");
+    scanf(" %f", bg02);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf(" %i", tg02);
+    printf("\n");
+
+    printf(" %s",G03);
+    printf("\n");
+    printf("População: ");
+    scanf(" %i",pg03);
+    printf("\n");
+    printf("Área: ");
+    scanf(" %f", ag03);
+    printf("\n");
+    printf("PIB: ");
+    scanf(" %f", bg03);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf(" %i", tg03);
+    printf("\n");
+
+    printf(" %s",G04);
+    printf("\n");
+    printf("População: ");
+    scanf(" %i",pg04);
+    printf("\n");
+    printf("Área: ");
+    scanf(" %f", ag04);
+    printf("\n");
+    printf("PIB: ");
+    scanf(" %f", bg04);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf(" %i", tg04);
+    printf("\n");
+
+    printf(" %s",D01);
+    printf("\n");
+    printf("População: ");
+    scanf(" %i",pd01);
+    printf("\n");
+    printf("Área: ");
+    scanf(" %f", ad01);
+    printf("\n");
+    printf("PIB: ");
+    scanf(" %f", bd01);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf(" %i", td01);
+    printf("\n");
+
+    printf(" %s",D02);
+    printf("\n");
+    printf("População: ");
+    scanf(" %i",pd02);
+    printf("\n");
+    printf("Área: ");
+    scanf(" %f", ad02);
+    printf("\n");
+    printf("PIB: ");
+    scanf(" %f", bd02);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf(" %i", td02);
+    printf("\n");
+
+    printf(" %s",D03);
+    printf("\n");
+    printf("População: ");
+    scanf(" %i",pd03);
+    printf("\n");
+    printf("Área: ");
+    scanf(" %f", ad03);
+    printf("\n");
+    printf("PIB: ");
+    scanf(" %f", bd03);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf(" %i", td03);
+    printf("\n");
+
+    printf(" %s",D04);
+    printf("\n");
+    printf("População: ");
+    scanf(" %i",pd04);
+    printf("\n");
+    printf("Área: ");
+    scanf(" %f", ad04);
+    printf("\n");
+    printf("PIB: ");
+    scanf(" %f", bd04);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf(" %i", td04);
+    printf("\n");
+
+    printf(" %s",H01);
+    printf("\n");
+    printf("População: ");
+    scanf(" %i",ph01);
+    printf("\n");
+    printf("Área: ");
+    scanf(" %f", ah01);
+    printf("\n");
+    printf("PIB: ");
+    scanf(" %f", bh01);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf(" %i", th01);
+    printf("\n");
+
+    printf(" %s",H02);
+    printf("\n");
+    printf("População: ");
+    scanf(" %i",ph02);
+    printf("\n");
+    printf("Área: ");
+    scanf(" %f", ah02);
+    printf("\n");
+    printf("PIB: ");
+    scanf(" %f", bh02);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf(" %i", th02);
+    printf("\n");
+
+    printf(" %s",H03);
+    printf("\n");
+    printf("População: ");
+    scanf(" %i",ph03);
+    printf("\n");
+    printf("Área: ");
+    scanf(" %f", ah03);
+    printf("\n");
+    printf("PIB: ");
+    scanf(" %f", bh03);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf(" %i", th03);
+    printf("\n");
+
+    printf(" %s",H04);
+    printf("\n");
+    printf("População: ");
+    scanf(" %i",ph04);
+    printf("\n");
+    printf("Área: ");
+    scanf(" %f", ah04);
+    printf("\n");
+    printf("PIB: ");
+    scanf(" %f", bh04);
+    printf("\n");
+    printf("N° de Pontos turísticos: ");
+    scanf(" %i", th04);
+    printf("\n");
+    
     return 0;
 }
